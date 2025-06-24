@@ -45,6 +45,7 @@ def load_and_chunk_docs() -> List[Document]:
                 query=keyword,
                 load_max_docs=1,
                 doc_content_chars_max=50000,
+                load_all_available_meta=True,
             )
             wiki_docs = wiki_loader.load()
             all_docs.extend(wiki_docs)
