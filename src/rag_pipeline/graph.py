@@ -13,7 +13,7 @@ from src.vector_store.builder import get_embeddings_model
 
 
 def rewrite_query(state: RAGState) -> RAGState:
-    """Rewrites the user's query to be standalone."""
+    """Rewrites the user's query to be standalone only if conversation history exists."""
     print("--- REWRITING QUERY ---")
     if state["conversation_history"]:
         rewriter = create_query_rewriter_chain()
@@ -24,9 +24,10 @@ def rewrite_query(state: RAGState) -> RAGState:
             }
         )
         state["rewritten_query"] = rewritten
+        print(f"Rewritten Query: {state['rewritten_query']}")
     else:
         state["rewritten_query"] = state["query"]
-    print(f"Rewritten Query: {state['rewritten_query']}")
+        print("No conversation history, using original query.")
     return state
 
 
