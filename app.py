@@ -6,12 +6,18 @@ from src.rag_pipeline.graph import build_rag_graph
 from src.config import Config
 
 # --- App Setup ---
-st.set_page_config(page_title="Cybersecurity RAG Assistant", layout="wide")
-st.title("Cybersecurity RAG Assistant")
+st.set_page_config(page_title="Cybersecurity InstructRAG Assistant", layout="wide")
+st.title("Cybersecurity InstructRAG Assistant")
 st.info(
     """
-**Welcome!** Ask a question about the topics covered in the PDF documents you've provided.
-This system uses a RAG (Retrieval-Augmented Generation) model powered by **Groq** to find relationships and answer complex queries.
+**Welcome!** This assistant uses the state-of-the-art **InstructRAG** pipeline to answer your cybersecurity questions based on your provided PDF documents.\
+
+**How it works:**
+- Retrieves and reranks the most relevant passages from your documents.
+- Instructs the language model to answer *only* using the retrieved context, reducing hallucinations and improving factual accuracy.
+- Powered by open models for embedding, reranking, and generation, orchestrated by LangGraph.
+
+*Ask a question about the topics covered in your PDFs to get started!*
 """
 )
 
@@ -53,7 +59,7 @@ if prompt := st.chat_input("Ask a question about cybersecurity..."):
 
     with st.chat_message("assistant"):
         message_placeholder = st.empty()
-        with st.spinner("Analyzing RAG with Groq..."):
+        with st.spinner("Running InstructRAG pipeline..."):
             history = "\n".join(
                 [
                     f"{msg['role']}: {msg['content']}"
