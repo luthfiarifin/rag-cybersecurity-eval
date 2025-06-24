@@ -26,8 +26,8 @@ Inspired by the findings in recent RAG research, this project uses a robust and 
 
 1.  **Clone & Setup Environment**:
     ```bash
-    git clone <your-repo-url>
-    cd instruct-rag-assistant
+    git clone https://github.com/luthfiarifin/rag-cybersecurity-eval.git
+    cd rag-cybersecurity-eval
     python -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
@@ -65,3 +65,7 @@ streamlit run app/app.py
 ### Step 3: Run the Evaluation
 
 Use the `notebooks/evaluation.ipynb` notebook to benchmark the system's performance.
+
+## References
+
+- **SOTA Paper**: [RAGtifier: Evaluating RAG Generation Approaches of State-of-the-Art RAG Systems for the SIGIR LiveRAG Competition](https://www.arxiv.org/pdf/2506.14412)
