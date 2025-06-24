@@ -1,0 +1,100 @@
+buffer overflow
+sql injection
+arbitrary code
+code execution
+red team
+crosssite scripting
+execute arbitrary
+scripting xss
+web application
+technique would
+penetration testing
+execute arbitrary code
+web applications
+crosssite scripting xss
+would effective
+network traffic
+buffer overflows
+exploit development
+social engineering
+technique effective
+effective technique
+team operation
+red team operation
+memory corruption
+initial access
+arbitrary code execution
+remote code
+correct answer
+malicious scripts
+remote code execution
+overflow vulnerabilities
+advanced persistent
+longterm access
+static analysis
+buffer overflow vulnerabilities
+primarily used
+malware analysis
+detection systems
+would likely
+address space
+technique would effective
+heap spraying
+injecting malicious
+allows attacker
+returnoriented programming
+static code
+nonexecutable stack
+input validation
+attacker execute
+technique used
+reverse engineering
+intrusion detection
+technique involves
+data execution
+command control
+stackbased buffer
+source code
+request forgery
+exploiting buffer
+execution prevention
+space layout
+layout randomization
+allow attacker
+network access
+data execution prevention
+maintaining longterm
+unauthorized access
+data exfiltration
+code analysis
+space layout randomization
+execution flow
+effective method
+intrusion detection systems
+attacker execute arbitrary
+static code analysis
+return address
+persistent threat
+team operations
+adjacent memory
+effective initial
+random data
+users browser
+denial service
+address space layout
+red team operations
+penetration test
+aslr dep
+overflow vulnerability
+target system
+threat apt
+application security
+context advanced
+maintaining persistence
+specifically designed
+format string
+web pages
+padding oracle
+advanced persistent threat
+persistent threat apt
+context exploit
