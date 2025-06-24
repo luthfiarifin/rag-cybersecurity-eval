@@ -25,6 +25,11 @@ This system uses a RAG (Retrieval-Augmented Generation) model powered by **Groq*
 def get_rag_app():
     """Builds and returns the RAG graph application."""
     if not Config.GROQ_API_KEY:
+        Config.GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", None)
+    if not Config.MONGO_URI:
+        Config.MONGO_URI = st.secrets.get("MONGO_URI", None)
+
+    if not Config.GROQ_API_KEY:
         st.error(
             "GROQ_API_KEY environment variable not set! Please set it in your .env file."
         )
