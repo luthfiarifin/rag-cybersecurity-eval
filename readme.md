@@ -1,6 +1,10 @@
 # Cybersecurity InstructRAG Assistant
 
-This project implements a state-of-the-art Retrieval-Augmented Generation (RAG) system based on the "InstructRAG" concept, which prioritizes a clean, powerful pipeline of retrieval, reranking, and instruction-based generation. This version uses MongoDB Atlas as a unified backend for both document storage and vector search.
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pnu-rag-cybersecurity-eval.streamlit.app/)
+
+![Pipeline Overview](docs/pipeline_overview.png)
+
+This project implements a state-of-the-art Retrieval-Augmented Generation (RAG) system based on the ["InstructRAG"](https://arxiv.org/abs/2406.13629) concept, which prioritizes a clean, powerful pipeline of retrieval, reranking, and instruction-based generation. This version uses MongoDB Atlas as a unified backend for both document storage and vector search.
 
 ## 1. Project Architecture
 
@@ -68,4 +72,5 @@ Use the `notebooks/evaluation.ipynb` notebook to benchmark the system's performa
 
 ## References
 
+- **InstructRAG Paper**: [InstructRAG: Instructing Retrieval-Augmented Generation via Self-Synthesized Rationales](https://arxiv.org/abs/2406.13629)
 - **SOTA Paper**: [RAGtifier: Evaluating RAG Generation Approaches of State-of-the-Art RAG Systems for the SIGIR LiveRAG Competition](https://www.arxiv.org/pdf/2506.14412)
