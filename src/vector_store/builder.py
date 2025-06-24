@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 from langchain_mongodb import MongoDBAtlasVectorSearch
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from src.config import Config
 from src.data_processing.loader import load_and_chunk_docs
 

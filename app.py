@@ -1,10 +1,6 @@
-# app/app.py
 import streamlit as st
 import sys
 import os
-
-# Add src to path to allow imports
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from src.rag_pipeline.graph import build_rag_graph
 from src.config import Config
@@ -20,7 +16,6 @@ This system uses a RAG (Retrieval-Augmented Generation) model powered by **Groq*
 )
 
 
-# --- LangGraph Setup ---
 @st.cache_resource
 def get_rag_app():
     """Builds and returns the RAG graph application."""
@@ -44,11 +39,9 @@ def get_rag_app():
 
 app = get_rag_app()
 
-# --- Session State ---
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# --- UI Rendering ---
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
