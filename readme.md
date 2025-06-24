@@ -15,7 +15,7 @@ The system is architected as a modular, linear pipeline orchestrated by LangGrap
 -   **Vector Store (MongoDB Atlas)**: MongoDB Atlas serves as a high-performance vector database to store and retrieve document embeddings, simplifying the tech stack.
 -   **Models**:
     -   **Embedding Model**: `BAAI/bge-large-en-v1.5` for creating vector representations of text.
-    -   **Reranker Model**: `BAAI/bge-reranker-large` to improve the relevance of retrieved documents.
+    -   **Reranker Model**: `BAAI/bge-reranker-base` to improve the relevance of retrieved documents.
     -   **Generation LLM**: `llama3-70b-8192` (via Groq) for query rewriting and final answer generation.
 
 ## 2. Design Rationale

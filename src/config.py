@@ -21,7 +21,7 @@ class Config:
     # LLM and Embedding/Reranker Model configuration
     LLM_MODEL = "llama3-70b-8192"
     EMBEDDING_MODEL = "BAAI/bge-large-en-v1.5"
-    RERANKER_MODEL = "BAAI/bge-reranker-large"
+    RERANKER_MODEL = "BAAI/bge-reranker-base"
 
     # Data paths
     PDF_DIRECTORY = "data/pdfs"
